@@ -110,7 +110,7 @@ input:focus, textarea:focus, select:focus {
     width: 200px;
     height: auto;
     display: block;
-    border-radius: 80px;
+    border-radius: 85px;
 }
 .audio-controls {
     display: flex;
