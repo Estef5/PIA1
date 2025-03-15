@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     console.log("✅ Script cargado correctamente");
 
     // Obtener elementos del formulario
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     programaField.style.display = "none";
 
     // Evento cuando cambia el tipo de proyecto
-    tipoProyecto.addEventListener("change", function () {
+    tipoProyecto.addEventListener("change", function() {
         if (tipoProyecto.value === "Proyecto Integrador de Aula (PIA)") {
             docenteField.style.display = "block";
             programaField.style.display = "block";
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Validación antes de enviar
-    form.addEventListener("submit", function (event) {
+    form.addEventListener("submit", function(event) {
         event.preventDefault(); // Evita el envío real del formulario
 
         let isValid = true;
@@ -51,12 +51,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Efecto en el título cuando pasa el mouse
     const titulo = document.querySelector("h1");
 
-    titulo.addEventListener("mouseover", function () {
+    titulo.addEventListener("mouseover", function() {
         titulo.style.color = "#ffcc00";
         titulo.style.transform = "scale(1.1)";
     });
 
-    titulo.addEventListener("mouseout", function () {
+    titulo.addEventListener("mouseout", function() {
         titulo.style.color = "#007bff";
         titulo.style.transform = "scale(1)";
     });
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const inputs = form.querySelectorAll(".form-control");
 
     inputs.forEach(input => {
-        input.addEventListener("blur", function () {
+        input.addEventListener("blur", function() {
             if (input.value.trim() === "") {
                 input.style.border = "2px solid red";
                 mostrarMensaje(input, "Este campo es obligatorio.");
